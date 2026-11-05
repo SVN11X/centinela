@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Si usas este proyecto, cítalo con estos datos."
+title: "Centinela: reloj de supervivencia con IA local"
+type: software
+authors:
+  - given-names: "Sebastián"
+    family-names: "Valderas Neculqueo"
+license: GPL-3.0-or-later
+# Cambia la dirección si el repositorio usa otro nombre
+repository-code: "https://github.com/SVN11X/centinela"
+abstract: "Reloj de supervivencia todo en uno, con un asistente de inteligencia artificial que funciona sin internet ni otros aparatos."
+keywords:
+  - reloj inteligente
+  - supervivencia
+  - inteligencia artificial local
+  - hardware abierto
+  - sin conexión

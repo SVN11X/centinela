@@ -1,0 +1,40 @@
+name: Registro de medición
+description: Resultado de una prueba o medición
+title: "[Medición] "
+labels: ["medicion"]
+body:
+  - type: input
+    id: protocolo
+    attributes:
+      label: Protocolo
+      placeholder: "Ejemplo: P-03, temperatura de la piel"
+    validations:
+      required: true
+  - type: textarea
+    id: condiciones
+    attributes:
+      label: Condiciones
+      description: Equipo usado, temperatura ambiente y versión del prototipo.
+    validations:
+      required: true
+  - type: textarea
+    id: resultado
+    attributes:
+      label: Resultado
+    validations:
+      required: true
+  - type: dropdown
+    id: cumple
+    attributes:
+      label: "¿Cumple la meta?"
+      options:
+        - "Sí"
+        - "No"
+        - "Parcialmente"
+    validations:
+      required: true
+  - type: input
+    id: informe
+    attributes:
+      label: Enlace al informe
+      placeholder: "pruebas/resultados/AAAA-MM-DD-tema/informe.md"

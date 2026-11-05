@@ -1,0 +1,62 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*~
+
+# Archivos temporales y de bloqueo de Office
+*.tmp
+~$*
+
+# KiCad
+*-backups/
+*.bak
+*.bck
+*.kicad_prl
+fp-info-cache
+_autosave-*
+*.lck
+\#auto_saved_files\#
+
+# Salidas de fabricación, se publican en Releases
+**/salidas/
+
+# FreeCAD
+*.FCBak
+*.FCStd1
+
+# Compilación de firmware (etapa 3)
+build/
+.pio/
+managed_components/
+sdkconfig.old
+
+# Python y Node, para herramientas futuras
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+
+# Contenido pesado que no va en git
+*.zim
+*.pmtiles
+*.mbtiles
+*.gguf
+*.axmodel
+*.onnx
+*.safetensors
+
+# Registros
+*.log
+
+# Secretos
+.env
+.env.*
+*.pem
+*.key

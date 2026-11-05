@@ -1,0 +1,17 @@
+# Normaliza los finales de línea
+* text=auto eol=lf
+
+# Binarios
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+
+# Modelos 3D y CAD con Git LFS (instalar una vez con: git lfs install)
+*.step  filter=lfs diff=lfs merge=lfs -text
+*.stp   filter=lfs diff=lfs merge=lfs -text
+*.stl   filter=lfs diff=lfs merge=lfs -text
+*.3mf   filter=lfs diff=lfs merge=lfs -text
+*.FCStd filter=lfs diff=lfs merge=lfs -text

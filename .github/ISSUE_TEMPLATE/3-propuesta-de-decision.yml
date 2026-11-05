@@ -1,0 +1,33 @@
+name: Propuesta de decisión
+description: Proponer un cambio de arquitectura, de requisito o de componente principal
+title: "[Decisión] "
+labels: ["decision"]
+body:
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Qué problema hay y qué restricciones importan.
+    validations:
+      required: true
+  - type: textarea
+    id: opciones
+    attributes:
+      label: Opciones
+      description: Al menos dos opciones, con ventajas y desventajas.
+    validations:
+      required: true
+  - type: textarea
+    id: recomendacion
+    attributes:
+      label: Recomendación
+    validations:
+      required: true
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Qué cambia si se acepta
+      description: Requisitos, etapas, costos o riesgos afectados.
+  - type: markdown
+    attributes:
+      value: "Si se acepta, se registra en docs/decisiones con la plantilla 0000."

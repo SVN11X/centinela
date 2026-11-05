@@ -1,0 +1,44 @@
+name: Tarea de etapa
+description: Trabajo planificado dentro de una etapa del proyecto
+title: "[Etapa N] "
+labels: ["tarea"]
+body:
+  - type: dropdown
+    id: etapa
+    attributes:
+      label: Etapa
+      options:
+        - "Etapa 0. Definición"
+        - "Etapa 1. Prototipo de medición"
+        - "Etapa 2. Contenido sin conexión"
+        - "Etapa 3. Software"
+        - "Etapa 4. Electrónica propia"
+        - "Etapa 5. Mecánica y térmica"
+        - "Etapa 6. Integración y pruebas en terreno"
+        - "Etapa 7. Versión 1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: Qué se quiere lograr con esta tarea.
+    validations:
+      required: true
+  - type: textarea
+    id: terminado
+    attributes:
+      label: Se da por terminada cuando
+      description: Una condición concreta que se pueda comprobar.
+      placeholder: "Ejemplo: el informe de P-01 está en pruebas/resultados con el arranque medido 5 veces."
+    validations:
+      required: true
+  - type: input
+    id: requisito
+    attributes:
+      label: Requisito relacionado
+      placeholder: "Ejemplo: RNF-06"
+  - type: textarea
+    id: notas
+    attributes:
+      label: Notas

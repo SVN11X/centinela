@@ -1,0 +1,46 @@
+name: Falla o hallazgo
+description: Algo no funciona como se esperaba o podría causar daño
+title: "[Falla] "
+labels: ["falla"]
+body:
+  - type: markdown
+    attributes:
+      value: "Si la falla puede dañar a una persona, marca la gravedad como Crítica. Si es una vulnerabilidad informática, no la publiques aquí y sigue SECURITY.md."
+  - type: dropdown
+    id: gravedad
+    attributes:
+      label: Gravedad
+      options:
+        - "Crítica: puede dañar a una persona"
+        - "Alta: una función principal no sirve"
+        - "Media: funciona, pero con problemas"
+        - "Baja: detalle menor"
+    validations:
+      required: true
+  - type: textarea
+    id: que-paso
+    attributes:
+      label: Qué pasó
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Qué se esperaba
+    validations:
+      required: true
+  - type: textarea
+    id: repetir
+    attributes:
+      label: Cómo repetirlo
+      placeholder: "1. ...\n2. ..."
+  - type: input
+    id: version
+    attributes:
+      label: Versión o prototipo
+      placeholder: "Ejemplo: prototipo de la etapa 1, v0.2.0"
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidencia
+      description: Fotos, registros o datos.
